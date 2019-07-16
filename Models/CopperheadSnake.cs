@@ -5,20 +5,16 @@ using diggers_flyers.Interfaces;
 
 namespace diggers_flyers.Models
 {
-    class CopperheadSnake : IWalkable
+    class CopperheadSnake : ISlitherable
     {
-        public int MaxRunSpeed { get; } = 9;
-
-        public int NumLegs { get; } = 0;
-
-        public void Walk()
+        
+        public void Slither()
         {
-            Console.WriteLine("The snake slithers");
+            Console.WriteLine($"The {Length} foot long snake slithers");
         }
 
-        public void Run()
-        {
-            Console.WriteLine("The snake slithers faster.");
-        }
+        public double Length { get; } = 12;
+
+        
     }
 }
