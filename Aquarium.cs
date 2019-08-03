@@ -6,7 +6,7 @@ using diggers_flyers.Models;
 
 namespace diggers_flyers
 {
-    class Aquarium
+    class Aquarium : IEnumerable
     {
         public List<ISwimmable> Animals { get; set; } = new List<ISwimmable>()
         {
